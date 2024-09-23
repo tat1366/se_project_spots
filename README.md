@@ -17,3 +17,7 @@ This project is made so all the elements are displayed correctly on popular scre
 This webpage is deployed to GitHub Pages
 
 -[Deployment Link]: (https://tat1366.github.io/se_project_spots/)
+
+## Project Video
+
+-[ Video link]: (https://www.canva.com/design/DAGRnE5bIFs/IEeHC7r0ostZ1Y3-CYTE5g/watch?utm_content=DAGRnE5bIFs&utm_campaign=designshare&utm_medium=link&utm_source=editor)
