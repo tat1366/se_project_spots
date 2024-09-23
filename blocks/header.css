@@ -1,0 +1,18 @@
+.header {
+  background-color: #fff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.header__logo {
+  height: 26px;
+  width: 96px;
+  /*margin-right: 600px;
+  margin-left: 600px;*/
+}
+@media screen and (max-width: 627px) {
+  .header {
+    align-items: center;
+  }
+}

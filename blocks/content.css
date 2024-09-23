@@ -1,0 +1,14 @@
+.content {
+  border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
+}
+
+@media screen and (max-width: 627px) {
+  .content {
+    max-width: 288px;
+    margin: 0 auto;
+  }
+
+  .content__cards {
+    grid-template-columns: repeat(auto-fit, 288px);
+  }
+}
