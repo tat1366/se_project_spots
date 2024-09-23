@@ -16,4 +16,4 @@ This project is made so all the elements are displayed correctly on popular scre
 
 This webpage is deployed to GitHun Pages
 
--Deployment Link:
+-Deployment Link: https://tat1366.github.io/se_project_spots/
