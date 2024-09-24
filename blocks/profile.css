@@ -74,7 +74,6 @@
 }
 @media screen and (max-width: 627px) {
   .profile {
-    display: flex;
     flex-direction: column;
     max-width: 288px;
     align-items: center;
@@ -91,19 +90,13 @@
   .profile__name {
     font-size: 20px;
     margin: 0 0 0 12px;
-    white-space: nowrap;
-    overflow: hidden;
+
     text-align: center;
   }
-  .profile__column {
-    margin: 0 0 0 20px;
-  }
+
   .profile__description {
     margin-left: auto;
     margin-right: auto;
-
-    white-space: nowrap;
-    overflow: hidden;
   }
   .profile__add-btn {
     width: 288px;
