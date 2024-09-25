@@ -7,8 +7,4 @@
     max-width: 288px;
     margin: 0 auto;
   }
-
-  .content__cards {
-    grid-template-columns: repeat(auto-fit, 288px);
-  }
 }
