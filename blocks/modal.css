@@ -20,7 +20,7 @@
   max-width: 730px;
   position: relative;
   width: 100%;
-  box-sizing: boarder-box;
+  box-sizing: border-box;
   position: relative;
 }
 .modal__close-btn {
