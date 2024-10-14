@@ -37,6 +37,11 @@
   background-image: url(../images/close.svg);
   opacity: 40%;
 }
+.modal__close-btn:hover {
+  opacity: 100%;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
 .modal__title {
   margin: 0 0 32px;
   font-size: 32px;
@@ -50,9 +55,9 @@
   font-size: 16px;
 }
 .modal__input {
+  border: #212121 1px 0.5;
   padding: 12px 10px;
   border-radius: 8px;
-  border: #212121 40% 1px;
 }
 .modal__submit-btn {
   width: 150px;
@@ -66,4 +71,9 @@
   margin-top: auto;
   border-radius: 8px;
   transition: 0.5s ease;
+}
+
+.modal__submit-btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
