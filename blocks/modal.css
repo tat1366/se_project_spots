@@ -53,11 +53,22 @@
   gap: 8px;
   margin-bottom: 32px;
   font-size: 16px;
+  opacity: 70%;
 }
 .modal__input {
-  border: #212121 1px 0.5;
+  color: #212121;
+  opacity: 1;
+  border: 1px solid;
   padding: 12px 10px;
   border-radius: 8px;
+  width: 630px;
+  height: 52px;
+}
+.modal__input::placeholder {
+  color: #212121;
+  font-weight: 500;
+  font-size: 20px;
+  opacity: 100%;
 }
 .modal__submit-btn {
   width: 150px;
