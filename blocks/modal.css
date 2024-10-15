@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: center;
   visibility: hidden;
-
+  padding: 0 20px;
   font-size: 32px;
 }
 .modal__opened {
@@ -61,7 +61,7 @@
   border: 1px solid;
   padding: 12px 10px;
   border-radius: 8px;
-  width: 630px;
+  max-width: 630px;
   height: 52px;
 }
 .modal__input::placeholder {
@@ -87,4 +87,26 @@
 .modal__submit-btn:hover {
   opacity: 0.8;
   cursor: pointer;
+}
+@media screen and (max-width: 627px) {
+  .modal {
+    padding: 0 10px;
+  }
+  .modal__container {
+    padding: 12px;
+  }
+  .modaul__title {
+    font-size: 20px;
+    margin: 10px 0 34px;
+  }
+  .modal__close-btn {
+    top: 12px;
+    right: 12px;
+  }
+  .modal__label {
+    margin-bottom: 24px;
+  }
+  .modal__submit-btn {
+    width: 100%;
+  }
 }
