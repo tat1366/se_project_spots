@@ -114,13 +114,13 @@
       </footer>
       <div class="modal" id="edit-profile-modal">
         <div class="modal__container">
-          <button type=" submit" class="modal__close-btn"></button>
+          <button type="button" class="modal__close-btn"></button>
           <h2 class="modal__title">Edit Profile</h2>
           <form name="edit-profile" class="modal__form">
             <label for="name" class="modal__label">
               Name
               <input
-                id="name"
+                id="profile-name-input"
                 type="text"
                 class="modal__input"
                 placeholder=" Bessie Coleman"
@@ -129,7 +129,7 @@
             <label for="Description" class="modal__label">
               Description
               <input
-                id="name"
+                id="profile-description-input"
                 type="text"
                 class="modal__input"
                 placeholder="Civil Aviator"
@@ -141,19 +141,19 @@
       </div>
       <div class="modal" id="new-post-modal">
         <div class="modal__container">
-          <button type=" submit" class="modal__close-btn"></button>
+          <button type="button" class="modal__close-btn"></button>
           <h2 class="modal__title">New Post</h2>
           <form name="new-post" class="modal__form">
             <label for="name" class="modal__label">
               Image link
               <input
-                id="image-link"
-                type="text"
+                id="card-imae-input"
+                type="url"
                 class="modal__input"
                 placeholder=" Past a link to the picture"
               />
             </label>
-            <label for="Description" class="modal__label">
+            <label for="profile-description-input" class="modal__label">
               Caption
               <input
                 id="description"
