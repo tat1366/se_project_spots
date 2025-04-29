@@ -25,3 +25,5 @@ const initialCards = [
   },
 ];
 console.log(initialCards);
+const newPostModal = document.querySelector("#new-post-modal");
+const editProfileModal = document.querySelector("#edit-profile-modal");
