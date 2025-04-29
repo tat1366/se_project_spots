@@ -28,7 +28,7 @@ console.log(initialCards);
 const newPostModal = document.querySelector("#new-post-modal");
 
 const editProfileModal = document.querySelector("#edit-profile-modal");
-const editProfileBtn = editProfileModal.querySelector(".profile__edit-btn");
+const editProfileBtn = document.querySelector(".profile__edit-btn");
 const editProfileCloseBtn = editProfileModal.querySelector(".modal__close-btn");
 const editProfileForm = editProfileModal.querySelector(".modal__form");
 const editProfileNameInput = editProfileModal.querySelector("#name");
