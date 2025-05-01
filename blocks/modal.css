@@ -12,10 +12,14 @@
   visibility: hidden;
   padding: 0 20px;
   font-size: 32px;
+  opacity: 0;
+  transition: opaicity 0.3s ease, transform ease;
+  transform: translateY(-50px);
 }
 .modal_is-opened {
   visibility: visible;
-  transition: opacity 1s ease-in;
+  opacity: 1;
+  transform: translatey(0);
 }
 .modal__container {
   background-color: #fff;
