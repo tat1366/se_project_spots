@@ -32,6 +32,9 @@ const newPostForm = newPostModal.querySelector(".modal__form");
 const newPostImageInput = newPostModal.querySelector("#card-image-input");
 const newPostCaptionInput = newPostModal.querySelector("#post-caption-input");
 
+const cardImageEl = document.querySelector(".card__image");
+const cardCaptionEl = document.querySelector(".card__title");
+
 const editProfileModal = document.querySelector("#edit-profile-modal");
 const editProfileBtn = document.querySelector(".profile__edit-btn");
 const editProfileCloseBtn = editProfileModal.querySelector(".modal__close-btn");
@@ -42,28 +45,31 @@ const editProfileNameInput = editProfileModal.querySelector(
 const editProfileDescriptionInput = editProfileModal.querySelector(
   "#profile-description-input"
 );
-const editProfileTextEl = editProfileModal.querySelector(".modal__input");
+
+const profileNameEl = document.querySelector(".profile__name");
+const profileDescriptionEl = document.querySelector(".profile__description");
+
 editProfileBtn.addEventListener("click", function () {
+  editProfileNameInput.value = profileNameEl.textContent;
+  editProfileDescriptionInput.value = profileDescriptionEl.textContent;
   editProfileModal.classList.add("modal_is-opened");
 });
 editProfileCloseBtn.addEventListener("click", function () {
   editProfileModal.classList.remove("modal_is-opened");
 });
-editProfileBtn.addEventListener("click", function () {
-  editProfileModal.classList.remove("modal_is-opened");
-  editProfileNameInput.value = "";
-});
 newPostBtn.addEventListener("click", function () {
+  newPostImageInput.value = cardImageEl;
+  newPostCaptionInput.value = cardCaptionEl.textContent;
   newPostModal.classList.add("modal_is-opened");
 });
 newPostCloseBtn.addEventListener("click", function () {
   newPostModal.classList.remove("modal_is-opened");
 });
-
-const inputValues = {
-  name: editProfileNameInput.value,
-  description: editProfileDescriptionInput.value,
-};
-editProfileForm.addEventListener("submit", function (evt) {
+function handleEditProfileSubmit(evt) {
   evt.preventDefault();
-});
+  profileNameEl.textContent = editProfileNameInput.value;
+  profileDescriptionEl.textContent = editProfileDescriptionInput.value;
+  editProfileModal.classList.remove("modal_is-opened");
+}
+
+editProfileForm.addEventListener("submit", handleEditProfileSubmit);
