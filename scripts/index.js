@@ -74,6 +74,5 @@ function handleEditProfileSubmit(evt) {
 }
 function handleNewPostSubmit(evt) {
   evt.preventDefault();
-  cardImageEl.
 }
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
