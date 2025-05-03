@@ -24,7 +24,7 @@ const initialCards = [
     link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/6-photo-by-moritz-feldmann-from-pexels.jpg",
   },
 ];
-console.log(initialCards);
+
 const newPostModal = document.querySelector("#new-post-modal");
 const newPostBtn = document.querySelector(".profile__add-btn");
 const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
@@ -74,5 +74,8 @@ function handleEditProfileSubmit(evt) {
 }
 function handleNewPostSubmit(evt) {
   evt.preventDefault();
+  console.log("submitted URL:", newPostImageInput);
+  console.log("submitted Caption", newPostCaptionInput);
+  newPostModal.classList.remove("modal_is-opened");
 }
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
