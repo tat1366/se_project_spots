@@ -12,13 +12,14 @@
   visibility: hidden;
   padding: 0 20px;
   font-size: 32px;
-  opacity: 0;
-  transition: opacity 1s ease, transform ease;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
 }
+
 .modal_is-opened {
   visibility: visible;
   opacity: 1;
-  transition: vivbility 0s 0s, opacity 1s ease;
+  pointer-events: auto;
 }
 .modal__container {
   background-color: #fff;
@@ -47,6 +48,8 @@
   transition: 0.5s ease;
 }
 .modal__title {
+  line-height: 100%;
+  color: #212121;
   margin: 0 0 32px;
   font-size: 32px;
   font-weight: 500;
@@ -54,35 +57,36 @@
 .modal__label {
   display: flex;
   flex-direction: column;
+  color: rgba(33, 33, 33, 0.7);
   gap: 8px;
   margin-bottom: 32px;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1;
-  opacity: 70%;
 }
 .modal__input {
   box-sizing: border-box;
   color: #212121;
+  font-size: 20px;
+  line-height: 100%;
   opacity: 1;
-  border: 1px solid;
+  border: 1px solid rgba(0, 0, 0, 0.5);
   padding: 16px 12px;
   border-radius: 8px;
-  max-width: 630px;
+  cursor: pointer;
 }
 .modal__input::placeholder {
-  color: #212121;
   font-weight: 500;
   font-size: 20px;
-  opacity: 100%;
+  opacity: 30%;
 }
 .modal__submit-btn {
   width: 150px;
   padding: 18px 0;
   font-size: 16px;
-
+  line-height: 100%;
   border: none;
   background-color: #212121;
-  color: #fff;
+  color: #fcf5e5;
   margin-left: auto;
   margin-top: auto;
   border-radius: 8px;
@@ -96,13 +100,18 @@
 @media screen and (max-width: 627px) {
   .modal {
     padding: 0 10px;
-    font-size: 20px;
   }
   .modal__container {
     padding: 12px;
   }
   .modaul__title {
     margin: 10px 0 34px;
+    font-size: 20px;
+    line-height: 100%;
+  }
+  .modal__input {
+    font-size: 16px;
+    line-height: 100%;
   }
   .modal__close-btn {
     top: 12px;
