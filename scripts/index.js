@@ -59,8 +59,6 @@ editProfileCloseBtn.addEventListener("click", function () {
 });
 
 newPostBtn.addEventListener("click", function () {
-  newPostImageInput.value = cardImageEl;
-  newPostCaptionInput.value = cardCaptionEl.textContent;
   newPostModal.classList.add("modal_is-opened");
 });
 newPostCloseBtn.addEventListener("click", function () {
@@ -79,3 +77,4 @@ function handleNewPostSubmit(evt) {
   newPostModal.classList.remove("modal_is-opened");
 }
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
+newPostForm.addEventListener("submit", handleNewPostSubmit);

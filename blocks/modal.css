@@ -4,7 +4,7 @@
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(33, 33, 33, 0.4);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,7 +73,11 @@
   border: 1px solid rgba(0, 0, 0, 0.5);
   padding: 16px 12px;
   border-radius: 8px;
+}
+.modal__input:hover {
+  opacity: 100%;
   cursor: pointer;
+  transition: 0.5s ease;
 }
 .modal__input::placeholder {
   font-weight: 500;
@@ -105,14 +109,12 @@
   .modal__container {
     padding: 12px;
   }
-  .modaul__title {
+  .modal__title {
     margin: 10px 0 34px;
     font-size: 20px;
-    line-height: 100%;
   }
   .modal__input {
     font-size: 16px;
-    line-height: 100%;
   }
   .modal__close-btn {
     top: 12px;
