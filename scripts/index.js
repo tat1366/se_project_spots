@@ -78,3 +78,7 @@ function handleNewPostSubmit(evt) {
 }
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
 newPostForm.addEventListener("submit", handleNewPostSubmit);
+initialCards.forEach(function (item) {
+  console.log(item.name);
+  console.log(item.link);
+});
